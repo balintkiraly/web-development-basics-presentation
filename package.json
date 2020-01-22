@@ -1,0 +1,13 @@
+{
+  "name": "web-basics",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "mdx-deck deck.js"
+  },
+  "devDependencies": {
+    "mdx-deck": "^2.5.1"
+  }
+}
+
