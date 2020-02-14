@@ -4,3 +4,370 @@ import { Invert } from 'mdx-deck'
 import myTheme from './theme'
 
 export const themes = [prism, myTheme]
+
+<Invert>
+
+# Webes alapozó
+## Kir - Dev
+
+Király Bálint
+
+</Invert>
+
+---
+
+# Agenda
+- Kir-Dev
+- World Wide Web
+- HTML
+- CSS
+- Workshop
+
+---
+
+<Invert>
+
+# Kir - Dev
+
+</Invert>
+
+---
+
+- 2001 óta működő kör
+- Web és Mobil fejlesztés
+- Profil és Körök (PéK)
+- Üzemeltetés
+- Meetupok, konferenciák
+
+---
+
+<Invert>
+
+# World Wide Web
+
+</Invert>
+
+---
+
+# Web != Internet
+
+---
+
+import { Split } from 'mdx-deck'
+
+<Split>
+
+![](https://upload.wikimedia.org/wikipedia/commons/4/4e/Sir_Tim_Berners-Lee_%28cropped%29.jpg)
+
+# Web 
+
+1991
+
+Tim Berners-Lee
+
+</Split>
+
+---
+
+<Invert>
+
+# Web működése
+
+</Invert>
+
+---
+
+# Kapcsolatfelépítés
+
+ - Host név feloldása IP címre
+ - TCP Kapcsolodás az IP címre (80/443-as porton)
+ - HTTP üzenetek
+
+---
+
+# HTTP
+
+- Egyszerű szüveges protokoll
+- Kliens-server architecture
+  - Kliens kezdeményez, szerver válaszol
+- Független kérések
+ 
+---
+ 
+# HTTP kérés
+
+- Kérés (kérés célja, URL)
+- Fejléc
+  - Preferált nyelv, kliens információk
+  - Host mező: a kért oldal hosztneve
+- Opcionális adat (űrlap, feltöltött fájl)
+ 
+---
+ 
+# HTTP kérés fajták
+ 
+- GET
+- POST
+- PUT
+- DELETE
+- ...
+
+---
+
+# GET
+- Egyszerű kérés, adatküldés nélkül
+- URL-ben küldhetünk paramétereket
+
+```/search?query=kir-dev```
+
+---
+
+# POST
+- Adatküldés (bejelentkezés, feltöltés)
+
+---
+
+# HTTP válaszok
+
+- Három rész
+  - Státuszkód
+  - Fejléc (legutóbbi módosítás, szerver információk)
+  - Opcionális adat (HTML oldal, letöltött fájl)
+
+---
+
+# Státuszkódok
+
+---
+
+![](https://i.stack.imgur.com/b4Efv.png)
+
+---
+
+![](https://i.stack.imgur.com/cGqdX.png)
+
+---
+
+- 1xx - tájékoztató információk
+- 2xx - sikeres kérés
+- 3xx - átirányítás
+- 4xx - klienshiba
+- 5xx - szerverhiba
+
+---
+
+# REST
+
+- CRUD műveletek
+
+---
+
+![](https://i.stack.imgur.com/RyM1b.png)
+
+---
+
+# REST alternativa
+## GraphQL
+- Egyetlen végpont
+- Adatmező dönti el mit kapunk
+
+---
+ 
+
+# Request
+```GraphQL
+{
+  users {
+    id
+    name
+    email
+  }
+}
+```
+
+---
+
+# Response
+```GraphQL
+{
+  data: [
+    {
+      1,
+      "Király Bálint",
+      "kiraly.balint@simonyi.bme.hu"
+    }
+  ]
+}
+```
+
+
+---
+
+# Cookie
+ 
+ 
+---
+
+# Local storage
+
+---
+
+# Biztonság
+
+- Egyszerű, szöveges protokoll
+- A forgalmat bárki láthatja és módosíthatja
+- Jelszavak?
+- Banki adatok?
+
+---
+ 
+# HTTPS
+
+- Titkosított kapcsolat a kliens és a szerver között
+- Ezen belül HTTP
+
+---
+
+<Invert>
+
+# Backend és frontend?!
+## Server és kliens?!
+
+</Invert>
+
+---
+
+# Server Side Rendering
+
+---
+
+# Client Side Rendering
+
+---
+
+<Invert>
+
+# HTML
+
+</Invert>
+
+---
+
+# HTML Tag
+```html
+<tag attributum='ertek'>
+<tag attributum='ertek'>...tartalom</tag>
+```
+---
+
+# HTML dokumentum
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+  </body>
+</html>
+```
+
+---
+
+# HTML DOM 
+
+---
+
+<Image src="/assets/dom.svg" />
+
+---
+
+# Szemantikus Web
+
+
+---
+
+# Egy-két fontosabb tag
+
+---
+
+# HTML Class és ID
+
+```
+<tag id="azonosito"/>
+<tag class="osztaly"/>
+```
+---
+
+<Invert>
+
+# DEMO 
+### Fejlesztői eszközök
+
+</Invert>
+
+---
+
+<Invert>
+
+# CSS
+
+</Invert>
+
+---
+
+# Mi az a css?
+
+- Stílusleíró nyelv
+
+---
+
+# CSS felépítése
+
+```
+selektor {
+  kulcs: "érték";
+  masik-kulcs: "Masik ertek";
+}
+```
+
+---
+
+# Visszatekintés 
+## HTML class és ID
+
+---
+
+# CSS selectorok
+
+```
+#azonosito { ... }
+.osztaly { ... }
+tag { ... }
+```
+
+---
+
+# CSS selectorok
+
+```
+div, p { }                //div és p
+div p { }                 //div-ben p
+div > p { }               //p közvetlen szülője egy div
+div + p { }               //div utáni p (közvetlen testvér)
+div ~ p { }               //div utáni p (testvér)
+input[type=”text”] { }    //input type attributuma text
+```
+
+---
+
+# CSS pszeudo osztályok
+
+---
+
+# Flex
+
+---
+
+# CSS keretrendszerek
+
+---
