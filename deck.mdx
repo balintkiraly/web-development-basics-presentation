@@ -19,6 +19,7 @@ Király Bálint
 - Kir-Dev
 - World Wide Web
 - HTML
+- Demo
 - CSS
 - Workshop
 
@@ -459,10 +460,147 @@ div:hover {
 
 ---
 
+# Színkezelés
+
+- #ff00aa
+- #f0a
+- rgb(0, 125, 255)
+- rgba(0, 125, 255, 0.5)
+- #ff00aaab
+- white, black, blue, red ...
+
+---
+
+# Display
+
+- inline
+- block
+- none
+- flex
+- és még 19 további...
+
+---
+
+<Invert>
+
+# Példák
+
+</Invert>
+
+---
+
+# Szöveg formázás
+
+```css
+color: #000000; /*a betűk színe, hexadecimálisan, rgb(), rgba(), szín-neve-angolul*/
+font-family: Arial, Helvetica; /*a betű típusa (font-face)*/
+font-size: 15px; /*a betű mérete*/
+font-weight: 400; /*a betű vastagsága 100-tól, 900-ig hasonló a boldhoz*/
+font-style: italic; /*a betű stílusa, bold*/
+letter-spacing: 15px; /*betűköz*/
+line-height: 15px; /*sorköz*/
+text-align: center; /*szöveg kizárása, left, right, center, justify*/
+text-decoration: underline; /*szöveg dekorálása*/
+text-shadow: 0px 1px 2px #000000; /*árnyék, left, top, blur, color*/
+text-transform: uppercase; /*csupa nagy betű, kis betű, kapitalizált stb.*/
+```
+
+---
+
+# Háttér és keret
+
+```css
+background-attachment: fixed; /*görgethető legyen a háttér vagy ne*/
+background-color: red; /*háttér színe*/
+background-image: url(‘images/ pic.png’); /*háttérkép*/
+background-position: left top; /*a háttér pozicioja*/
+background-repeat: no-repeat; /*a hatter ismetlese*/
+background: transparent url(‘../images/pic_holder.png’) top left norepeat;
+
+border-width: 2px; /*border vastagsága*/
+border-color: #234f8a; /*border színe*/
+border-style: solid; /*stílusa*/
+border: 3px solid dashed; /*megadható egyszerre itt is*/
+border-top: 3px solid dashed; /*csak felső keret az elemre*/
+border-radius: 2px; /*a sarkok lekerekítése bizonyos sugárral*/
+box-shadow: 0px 3px 4px #000000; /*árnyéka az elemnek*/
+```
+
+---
+
+# Méretek margók
+
+```css
+width: 500px; /*elem szélessége*/
+height: 10px; /*elem magassága*/
+margin-top: 5px; /*felső margó*/
+margin-bottom: 5px; /*alsó margó*/
+margin-right: 5px; /*jobb margó*/
+margin-left: 5px; /*bal margó*/
+margin: 5px; /*összes margó 5 px*/
+margin: 5px 10px; /*felső és alsó margó 5 px, két szélső 10px*/
+margin: 5px 10px 4px 1px; /*fent jobbra lent balra*/
+padding: 10px; /*belső margó*/
+```
+
+---
+
+# 520 DB CSS property
+
+![](http://localhost:8081/assets/howmuch.webp)
+
+---
+
+# CSS Box model
+
+---
+
+![](http://localhost:8081/assets/boxmodel.png)
+
+---
+
+# Media Query
+
+```css
+@media screen and (max-width : 768px) {
+ #navigation a {
+   width: 100%;
+ }
+}
+```
+
+---
+
 # Flex
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 ---
 
 # CSS keretrendszerek
 
+---
 
+![](http://localhost:8081/assets/tailwind.png)
+
+---
+
+```html
+<div class="max-w-sm rounded overflow-hidden shadow-lg">
+  <img class="w-full" src="/img/card-top.jpg">
+  <div class="px-6 py-4">
+    <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+    <p class="text-gray-700 text-base">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    </p>
+  </div>
+</div>
+```
+
+---
+
+<Invert>
+
+# Workshop
+
+</Invert>
